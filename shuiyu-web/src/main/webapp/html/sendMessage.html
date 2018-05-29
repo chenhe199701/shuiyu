@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面-----》发送短信</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/webbase.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pages-register.css"/>
+    <!-- 引入angular的js -->
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+
+    <!-- 引入模块 -->
+    <script type="text/javascript" src="../js/base.js"></script>
+
+    <!-- 引入客户类的前端Controller层和Service层 -->
+    <script type="text/javascript" src="../js/service/customerService.js"></script>
+    <script type="text/javascript" src="../js/controller/customerController.js"></script>
+
+</head>
+<body ng-app="shuiyu" ng-controller="customerController">
+
+
+<div class="control-group">
+    <label class="control-label">手机号：</label>
+    <div class="controls">
+        <input type="text"  ng-model="phoneName" placeholder="请输入你的手机号" class="input-xfat input-xlarge">
+    </div>
+</div>
+<div class="control-group">
+    <label  class="control-label">短信验证码：</label>
+    <div class="controls">
+        <input type="text" placeholder="短信验证码" ng-model="smscode" class="input-xfat input-xlarge">  <a href="#" ng-click="sendCode()">获取短信验证码</a>
+    </div>
+</div>
+<!--引入JS文件-->
+<script type="text/javascript" src="../js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../js/plugins/sui/sui.min.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../js/pages/register.js"></script>
+</body>
+</html>

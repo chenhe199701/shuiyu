@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>shuiyu_app</artifactId>
+        <groupId>com.shuiyu</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shuiyu-web</artifactId>
+    <packaging>war</packaging>
+
+    <name>shuiyu-web</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+
+    <!-- 导入依赖 -->
+    <dependencies>
+        <dependency>
+            <!-- 导入SpringMVC的依赖 -->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <dependency>
+            <!-- 导入Servlet的依赖 -->
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <!-- 导入jstl的依赖 -->
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <!-- 导入juint的依赖 -->
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+        <dependency>
+            <!--导入Spring的测试 -->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+
+        <!-- 添加Service层的依赖 -->
+        <dependency>
+            <groupId>com.shuiyu</groupId>
+            <artifactId>shuiyu-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>shuiyu-web</finalName>
+        <!-- 默认源代码和资源文件目录配置 -->
+         <sourceDirectory>src/main/java</sourceDirectory>
+         <resources>
+             <resource>
+                 <directory>src/main/resources</directory>
+             </resource>
+         </resources>
+    </build>
+</project>
